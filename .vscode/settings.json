@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.configPath": ".prettierrc",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    // Runs Prettier, then ESLint
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+}

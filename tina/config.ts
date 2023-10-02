@@ -24,6 +24,10 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "src/content/blog",
+        defaultItem: () => {
+          return {
+          }
+        },
         fields: [
           {
             type: "string",
@@ -42,6 +46,43 @@ export default defineConfig({
             type: "datetime",
             name: "pubDatetime",
             label: "Publish time",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author (Default = site author)",
+          },
+          {
+            type: "string",
+            name: "postSlug",
+            label: "Slug for the post. (Default = title.slugify)",
+          },
+          {
+            type: "boolean",
+            name: "featured",
+            label: "Diplay Post in featured section",
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Mark this post unpublished",
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Tags for this post (default = others)",
+            list: true
+          },
+          {
+            type: "image",
+            name: "ogImage",
+            label: "OG image of the post. Useful for social media sharing and SEO. default = SITE.ogImage or generated OG image",
+          },
+          {
+            type: "string",
+            name: "canonicalURL",
+            label: "Canonical URL (absolute), in case the article already exists on other source.",
           },
           {
             type: "rich-text",

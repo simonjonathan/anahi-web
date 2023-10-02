@@ -2,15 +2,15 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  author: "Anahi Montes",
+  desc: "Anahi Montes Blog",
+  title: "Anahi Montes",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = ["de-DE"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: false,
