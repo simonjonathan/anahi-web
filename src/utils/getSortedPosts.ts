@@ -2,6 +2,7 @@ import type { CollectionEntry } from "astro:content";
 import post from "./og-templates/post";
 
 const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
+  // ToDo: fix for 0 posts?
   return posts
     .filter(({ data }) => !data.draft)
     .sort(
