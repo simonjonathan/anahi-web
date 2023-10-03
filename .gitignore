@@ -35,3 +35,5 @@ pnpm-debug.log*
 .pnp.*
 
 node_modules
+# Local Netlify folder
+.netlify
