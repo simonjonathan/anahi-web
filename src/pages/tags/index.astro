@@ -16,9 +16,17 @@ let tags = getUniqueTags(posts);
 <Layout title={`Tags | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main pageTitle="Tags" pageDesc="Alle Tags meiner Posts">
-    <ul>
-      {tags.map(tag => <Tag name={tag} size="lg" />)}
-    </ul>
+    {
+      tags.length > 0 ? (
+        <ul>
+          {tags.map(tag => (
+            <Tag name={tag} size="lg" />
+          ))}
+        </ul>
+      ) : (
+        <p>Noch keine Tags vorhanden.</p>
+      )
+    }
   </Main>
   <Footer />
 </Layout>

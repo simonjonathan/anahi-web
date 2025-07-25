@@ -1,7 +1,11 @@
 import type { CollectionEntry } from "astro:content";
 
 const getSortedPosts = (posts: CollectionEntry<"blog">[]) => {
-  // ToDo: fix for 0 posts?
+  // Handle empty posts array
+  if (!posts || posts.length === 0) {
+    return [];
+  }
+
   return posts
     .filter(({ data }) => !data.draft)
     .sort(

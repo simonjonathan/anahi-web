@@ -67,22 +67,26 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <section id="recent-posts">
       <h2>Jüngste Beiträge</h2>
-      <ul>
-        {
-          sortedPosts
-            .filter(({ data }) => !data.featured)
-            .map(
-              ({ data }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slugify(data)}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )
-        }
-      </ul>
+      {
+        sortedPosts.filter(({ data }) => !data.featured).length > 0 ? (
+          <ul>
+            {sortedPosts
+              .filter(({ data }) => !data.featured)
+              .map(
+                ({ data }, index) =>
+                  index < 4 && (
+                    <Card
+                      href={`/posts/${slugify(data)}`}
+                      frontmatter={data}
+                      secHeading={false}
+                    />
+                  )
+              )}
+          </ul>
+        ) : (
+          <p>Noch keine Posts vorhanden.</p>
+        )
+      }
       <div class="all-posts-btn-wrapper">
         <LinkButton href="/posts">
           Alle Posts

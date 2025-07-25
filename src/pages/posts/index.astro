@@ -10,7 +10,9 @@ const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 
-const totalPages = getPageNumbers(sortedPosts.length);
+// Handle empty blog collection
+const totalPages =
+  sortedPosts.length > 0 ? getPageNumbers(sortedPosts.length) : [];
 
 const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
 ---
