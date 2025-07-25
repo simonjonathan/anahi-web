@@ -19,6 +19,11 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
+  // Handle empty blog collection
+  if (!posts || posts.length === 0) {
+    return [];
+  }
+
   const tags = getUniqueTags(posts);
 
   return tags.map(tag => {

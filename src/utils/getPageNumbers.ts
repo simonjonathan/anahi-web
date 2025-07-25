@@ -1,6 +1,11 @@
 import { SITE } from "@config";
 
 const getPageNumbers = (numberOfPosts: number) => {
+  // Handle zero posts
+  if (numberOfPosts <= 0) {
+    return [];
+  }
+
   const numberOfPages = numberOfPosts / Number(SITE.postPerPage);
 
   let pageNumbers: number[] = [];

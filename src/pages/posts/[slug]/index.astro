@@ -14,6 +14,11 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
+  // Handle empty blog collection
+  if (!posts || posts.length === 0) {
+    return [];
+  }
+
   const postResult = posts.map(post => ({
     params: { slug: slugify(post.data) },
     props: { post },
