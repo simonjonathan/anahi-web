@@ -8,9 +8,9 @@ draft: false
 
 ## "BEWEGT WERDEN"
 
-### AM 20.09.25 11:00 - 13:00 UHR
+### AM 20.09.25  11:00 - 13:00 UHR
 
-### Studio 87 in Köln Brüsseler Straße 87
+### Studio 87 in Köln  Brüsseler Straße 87
 
 ##### Anmeldung unter: [hsophiel@web.de](mailto:hsophiel@web.de)
 
