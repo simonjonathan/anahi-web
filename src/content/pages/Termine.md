@@ -1,7 +1,7 @@
 ---
 title: Termine
 description: Unsere Termine
-useAboutLayout: false
+useAboutLayout: true
 showInNav: true
 draft: false
 ---
