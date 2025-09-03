@@ -1,7 +1,7 @@
 ---
 title: BEWEGT WERDEN
 description: Körperarbeit kennenlernen durch gegenseitiges bewegen und berühren
-useAboutLayout: false
+useAboutLayout: true
 showInNav: false
 draft: false
 ---
