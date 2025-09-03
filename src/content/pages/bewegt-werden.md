@@ -8,13 +8,15 @@ draft: false
 
 ## "BEWEGT WERDEN"
 
-### AM 20.09.25 11:00 - 13:00 UHR  
+### AM 20.09.25 11:00 - 13:00 UHR
 
 ### Studio 87 in Köln Brüsseler Straße 87
 
-##### Anmeldung unter: [hsophiel@web.de](mailto:hsophiel@web.de)  
+##### Anmeldung unter: [hsophiel@web.de](mailto:hsophiel@web.de)
 
 ##### Preis: In eigenem Ermessen ab 35€
+
+ 
 
 WIE LÄUFT DAS GANZE AB?
 
@@ -28,6 +30,10 @@ Dabei geht es darum Bewusstsein und Lockerung in die Bewegten Bereiche zu bringe
 
 Wir wollen im eigenen Körper ankommen und zu einer freieren Atmung finden.
 
+ 
+
 Gemütliche Kleidung anziehen.
+
+ 
 
 Wir freuen uns auf euch! :)
