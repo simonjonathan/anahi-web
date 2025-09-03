@@ -6,3 +6,6 @@ showInNav: true
 draft: true
 ---
 
+[20.09.25 \
+11:00 - 13:00\
+"BEWEGT WERDEN"](http://anahimontes.de/bewegt-werden)
