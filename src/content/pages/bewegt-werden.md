@@ -2,15 +2,19 @@
 title: BEWEGT WERDEN
 description: Körperarbeit kennenlernen durch gegenseitiges bewegen und berühren
 useAboutLayout: false
-showInNav: true
-draft: true
+showInNav: false
+draft: false
 ---
 
 ## "BEWEGT WERDEN"
 
-### AM 20.09.25 11:00 - 13:00 UHR  Studio 87 in Köln Brüsseler Straße 87
+### AM 20.09.25 11:00 - 13:00 UHR  
 
-##### Anmeldung unter: [hsophiel@web.de](mailto:hsophiel@web.de)  Preis: In eigenem Ermessen ab 35€
+### Studio 87 in Köln Brüsseler Straße 87
+
+##### Anmeldung unter: [hsophiel@web.de](mailto:hsophiel@web.de)  
+
+##### Preis: In eigenem Ermessen ab 35€
 
 WIE LÄUFT DAS GANZE AB?
 
