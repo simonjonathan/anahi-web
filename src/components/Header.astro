@@ -2,12 +2,17 @@
 import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
+import { getCollection } from "astro:content";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
 }
 
 const { activeNav } = Astro.props;
+
+// Get all published pages for navigation
+const pages = await getCollection("pages");
+const navPages = pages.filter(page => !page.data.draft && page.data.showInNav);
 ---
 
 <header>
@@ -60,11 +65,13 @@ const { activeNav } = Astro.props;
               Posts
             </a>
           </li>
-          <li>
-            <a href="/ueber-mich" class={activeNav === "about" ? "active" : ""}>
-              Über mich
-            </a>
-          </li>
+          {navPages.map((page) => (
+            <li>
+              <a href={`/${page.slug}`} class={activeNav === "about" && page.slug === "ueber-mich" ? "active" : ""}>
+                {page.data.title}
+              </a>
+            </li>
+          ))}
           <li>
             <LinkButton
               href="/search"

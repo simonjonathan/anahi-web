@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import AboutLayout from "../layouts/AboutLayout.astro";
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  
+  return pages
+    .filter(page => !page.data.draft)
+    .map((page) => ({
+      params: { 
+        slug: page.slug 
+      },
+      props: { page },
+    }));
+}
+
+interface Props {
+  page: CollectionEntry<"pages">;
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+// Determine which layout to use based on the useAboutLayout field
+const useAboutLayout = page.data.useAboutLayout;
+---
+
+{useAboutLayout ? (
+  <AboutLayout frontmatter={{ title: page.data.title, description: page.data.description }}>
+    <Content />
+  </AboutLayout>
+) : (
+  <Layout title={page.data.title} description={page.data.description} ogImage={page.data.ogImage}>
+    <Content />
+  </Layout>
+)}

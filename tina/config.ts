@@ -92,6 +92,62 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "page",
+        label: "Pages",
+        path: "src/content/pages",
+        defaultItem: () => {
+          return {
+            title: "New Page",
+            description: "A new page",
+            useAboutLayout: false,
+            showInNav: true
+          }
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Page Description",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "useAboutLayout",
+            label: "Use About Layout",
+            description: "Toggle to use the About layout instead of the main layout"
+          },
+          {
+            type: "boolean",
+            name: "showInNav",
+            label: "Show in Navigation",
+            description: "Toggle to show this page in the main navigation menu"
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Mark this page as draft",
+          },
+          {
+            type: "image",
+            name: "ogImage",
+            label: "OG image for social media sharing",
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Page Content",
+            isBody: true,
+          },
+        ],
+      },
     ],
   },
 });

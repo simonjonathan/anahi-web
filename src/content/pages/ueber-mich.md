@@ -1,7 +1,9 @@
 ---
-layout: ../layouts/AboutLayout.astro
 title: "Über mich"
-redirect: "/ueber-mich"
+description: "About page - Über mich"
+useAboutLayout: true
+showInNav: true
+draft: false
 ---
 
 Wer bin ich?

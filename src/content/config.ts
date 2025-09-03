@@ -23,4 +23,22 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+const pages = defineCollection({
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      useAboutLayout: z.boolean().default(false),
+      showInNav: z.boolean().default(true),
+      draft: z.boolean().optional(),
+      ogImage: image()
+        .refine(img => img.width >= 1200 && img.height >= 630, {
+          message: "OpenGraph image must be at least 1200 X 630 pixels!",
+        })
+        .or(z.string())
+        .optional(),
+    }),
+});
+
+export const collections = { blog, pages };
