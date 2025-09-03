@@ -16,7 +16,7 @@ draft: false
 
 ##### Preis: In eigenem Ermessen ab 35€
 
- 
+ 
 
 WIE LÄUFT DAS GANZE AB?
 
@@ -30,10 +30,8 @@ Dabei geht es darum Bewusstsein und Lockerung in die Bewegten Bereiche zu bringe
 
 Wir wollen im eigenen Körper ankommen und zu einer freieren Atmung finden.
 
- 
-
 Gemütliche Kleidung anziehen.
-
- 
+ 
+ 
 
 Wir freuen uns auf euch! :)
