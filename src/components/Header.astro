@@ -5,14 +5,26 @@ import LinkButton from "./LinkButton.astro";
 import { getCollection } from "astro:content";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  // No props needed for automatic navigation detection
 }
-
-const { activeNav } = Astro.props;
 
 // Get all published pages for navigation
 const pages = await getCollection("pages");
 const navPages = pages.filter(page => !page.data.draft && page.data.showInNav);
+
+// Get current path to highlight active page
+const currentPath = Astro.url.pathname;
+
+// Function to check if a nav item is active
+const isActive = (path: string) => {
+  // Check URL-based matching
+  if (currentPath === path || 
+      (path === "/posts" && currentPath.startsWith("/posts/")) ||
+      (path === "/tags" && currentPath.startsWith("/tags/"))) {
+    return true;
+  }
+  return false;
+};
 ---
 
 <header>
@@ -61,13 +73,13 @@ const navPages = pages.filter(page => !page.data.draft && page.data.showInNav);
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
-            <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
+            <a href="/posts" class={isActive("/posts") ? "active" : ""}>
               Posts
             </a>
           </li>
           {navPages.map((page) => (
             <li>
-              <a href={`/${page.slug}`} class={activeNav === "about" && page.slug === "ueber-mich" ? "active" : ""}>
+              <a href={`/${page.slug}`} class={isActive(`/${page.slug}`) ? "active" : ""}>
                 {page.data.title}
               </a>
             </li>
@@ -76,7 +88,7 @@ const navPages = pages.filter(page => !page.data.draft && page.data.showInNav);
             <LinkButton
               href="/search"
               className={`focus-outline p-3 sm:p-1 ${
-                activeNav === "search" ? "active" : ""
+                isActive("/search") ? "active" : ""
               } flex`}
               ariaLabel="search"
               title="Search"
