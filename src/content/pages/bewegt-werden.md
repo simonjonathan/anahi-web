@@ -18,11 +18,11 @@ draft: false
 
  
 
-WIE LÄUFT DAS GANZE AB?
+**WIE LÄUFT DAS GANZE AB?**
 
 Passives bewegt werden - Du liegst auf einer weichen Matte, während dein\*e Partner\*in unter unserer Anleitung einzelne Körperteile und Gelenke sanft bewegt, streckt u.v.m
 
-WOMIT ARBEITEN WIR?
+**WOMIT ARBEITEN WIR?**
 
 Wir arbeiten mit unseren Händen; berühren und bewegen die Füße, Beine, Arme und Hände des Partners.
 
