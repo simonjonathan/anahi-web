@@ -29,10 +29,11 @@ Wir arbeiten mit unseren Händen; berühren und bewegen die Füße, Beine, Arme 
 Dabei geht es darum Bewusstsein und Lockerung in die Bewegten Bereiche zu bringen, Blockaden zu lösen und das Nervensystem in einen harmonischen Zustand zu bringen.
 
 Wir wollen im eigenen Körper ankommen und zu einer freieren Atmung finden.
+
  
 
 Gemütliche Kleidung anziehen.
- 
+
  
 
 Wir freuen uns auf euch! :)
